@@ -1,11 +1,11 @@
 // alert('Ciao');
 // Chiedi all’utente il cognome
 var cognome = prompt('Inserisci il tuo cognome');
-// inseriscilo in un array con altri cognomi
-var listaCognomi = ['Rossi', 'Bianchi', 'Verdi', 'Scuri', 'Chiari'];
 while (cognome.length < 0) {
   cognome = prompt('Inserisci il tuo cognome');
 }
+// inseriscilo in un array con altri cognomi
+var listaCognomi = ['Rossi', 'Bianchi', 'Verdi', 'Scuri', 'Chiari'];
 listaCognomi.push(cognome);
 listaCognomi.sort();
 console.log(listaCognomi);
@@ -17,3 +17,6 @@ for (var i = 0; i < listaCognomi.length; i++) {
 }
 
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
+var position = listaCognomi.indexOf(cognome);
+document.getElementById("posizione").innerHTML = position;
+console.log(document.getElementById("posizione").innerHTML = position);
