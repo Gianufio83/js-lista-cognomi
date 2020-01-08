@@ -17,6 +17,6 @@ for (var i = 0; i < listaCognomi.length; i++) {
 }
 
 // Scrivi anche la posizione della lista in cui il nuovo utente si trova.
-var position = listaCognomi.indexOf(cognome);
-document.getElementById("posizione").innerHTML = position;
+var position = listaCognomi.indexOf(cognome) + 1;
+document.getElementById("posizione").innerHTML = "Il cognome da te inserito nella" + position + "dell'elenco";
 console.log(document.getElementById("posizione").innerHTML = position);
